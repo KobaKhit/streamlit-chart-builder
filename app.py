@@ -10,10 +10,9 @@ def non_zero_columns(row):
 
 st.set_page_config(layout="wide") 
 st.title('Plotly Funnel Chart Example')
+st.markdown('Developed with :heart: by [Koba Khit](https://www.linkedin.com/in/kobakhit/)')
 
-# chart placeholder
-chart = st.container()
-ui = st.container()
+
 
 
 # editable datatable
@@ -55,7 +54,10 @@ fig.add_trace(go.Funnel(
     textinfo = "value+percent total"))
 '''
 
+# chart placeholder
+chart = st.container()
 
+ui = st.container()
 
 with ui:
     c1, c2 = st.columns(2)
