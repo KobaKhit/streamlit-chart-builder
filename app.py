@@ -101,7 +101,7 @@ fig.update_layout(height = 800,
 )
 
 # chart display
-with chart.columns([1,5,1])[1]:
+with chart.columns([1,100,1])[1]:
     st.plotly_chart(fig, use_container_width = True)
 
 
